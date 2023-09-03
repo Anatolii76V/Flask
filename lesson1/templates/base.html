@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Магазин{% endblock %}</title>
+</head>
+<body>
+<header>
+    <!-- Шапка сайта -->
+    <img src="{{ header_image_src }}" alt="Home Image" width="1590">
+    <h1>Интернет-магазин</h1>
+</header>
+<nav>
+    <!-- Меню навигации -->
+    <ul>
+        <li><a href="/clothing">Одежда</a></li>
+        <li><a href="/shoes">Обувь</a></li>
+        <li><a href="/product">Товар</a></li>
+    </ul>
+</nav>
+
+<div class="content">
+    <!-- Блок, который будет заполнен в дочерних шаблонах -->
+    {% block content %}{% endblock %}
+</div>
+
+<footer>
+    <!-- Подвал сайта -->
+    &copy; 2023 Интернет-магазин.
+</footer>
+</body>
+</html>
