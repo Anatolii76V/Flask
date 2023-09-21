@@ -46,7 +46,6 @@ orders = sqlalchemy.Table(
 metadata.create_all(engine)
 
 
-# Определение моделей данных с новыми именами
 class User(BaseModel):
     id: int = Field(default=None)
     name: str = Field(min_length=2, max_length=50)
